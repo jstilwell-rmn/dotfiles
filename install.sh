@@ -17,11 +17,6 @@ function install_vim_plugin() {
 # NOTE: This doesn't pull updates from each module's remote
 git submodule update
 
-# Kitty
-mkdir -p ~/.config/kitty
-install $DIR/kitty/kitty.conf ~/.config/kitty/kitty.conf
-install $DIR/kitty/dracula.conf ~/.config/kitty/dracula.conf
-
 # ZSH dotfiles
 install $DIR/.zshrc ~/.zshrc
 
