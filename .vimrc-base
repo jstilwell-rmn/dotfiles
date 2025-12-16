@@ -9,7 +9,6 @@ set cmdheight=2
 set directory=$HOME/.vim/tmp
 set exrc
 set foldmethod=indent
-set guioptions+=b
 set hidden
 set hlsearch
 set ignorecase
@@ -35,6 +34,11 @@ set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 set updatetime=300 " Reduce time for highlighting other references
 set undofile 
 set wildmode=longest:full,full
+
+" Check if the guioptions option is supported (exists and works)
+if exists('+guioptions')
+  set guioptions+=b
+endif
 
 filetype plugin indent on
 

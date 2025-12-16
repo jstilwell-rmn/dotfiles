@@ -14,28 +14,9 @@ Plug 'junegunn/fzf', { 'dir' : '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " Language Support
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jwalton512/vim-blade'
-Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
-Plug 'antoinemadec/coc-fzf'
 
 " Test Runner Support
 Plug 'vim-test/vim-test'
-
-let g:coc_global_extensions = [
-    \ 'coc-css',
-    \ 'coc-diagnostic',
-    \ 'coc-emmet',
-    \ 'coc-git',
-    \ 'coc-html',
-    \ 'coc-json',
-    \ 'coc-pairs',
-    \ 'coc-phpls',
-    \ 'coc-php-cs-fixer',
-    \ 'coc-prettier',
-    \ 'coc-sh',
-    \ 'coc-sql',
-    \ 'coc-svg'
-\ ]
 
 call plug#end()
